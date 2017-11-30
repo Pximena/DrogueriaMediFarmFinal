@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.i044114_i012114.proyectofinalandroid.LoginActivity">
+
+    <include  layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/white"
+        >
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:src="@drawable/im"
+            />
+
+        <TextView
+            android:id="@+id/id_tv_iu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digite Cedula:"
+            android:textSize="15sp"
+            android:textColor="#00abf5"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/im"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/id_et_users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_tv_iu"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/id_tv_ic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digite Contraseña:"
+            android:textSize="15sp"
+            android:layout_below="@+id/id_et_users"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#00abf5"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/id_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_tv_ic"
+            android:inputType="textPassword"
+
+            />
+
+        <CheckBox
+            android:id="@+id/opcion_mostrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_et_users"
+            android:layout_alignRight="@id/id_et_password"
+            android:onClick="mostrarContraseña"
+            android:button="@drawable/checkbox_status"
+            android:layout_marginTop="30dp"
+            />
+
+        <RadioButton
+            android:id="@+id/id_rb_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_et_password"
+            android:text="Desea mantener activa sesion?"
+            android:textColor="#00abf5"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/id_btn_ingresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INGRESAR"
+            android:theme="@style/RaisedButtonDark"
+            android:layout_below="@id/id_rb_s"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:onClick="userVali"
+            />
+
+        <Button
+            android:id="@+id/id_btn_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRAR"
+            android:theme="@style/RaisedButtonDark"
+            android:layout_below="@id/id_btn_ingresar"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:onClick="goToResgister"
+
+            />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

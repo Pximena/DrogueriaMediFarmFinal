@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ProyectoFinalAndroid</string>
+    <string name="str_1">Listar Favoritos</string>
+    <string name="str_2">Listar Pedidos</string>
+    <string name="str_3">Cerrar</string>
+    <string name="str_tb_p1">Bienvenido a MediFarm</string>
+    <string name="str_tb_p2">Resgistre Usuario</string>
+    <string name="str_tb_p3">Lista de Productos</string>
+    <string name="str_tb_p4">Descripcion de Producto</string>
+    <string name="str_tb_p5">Lista de Favoritos</string>
+    <string name="str_tb_p6">Lista de Pedidos</string>
+    <string name="str_tb_p7">Pedido a Realizar</string>
+    <string name="str_s">Listar Productos</string>
+
+</resources>

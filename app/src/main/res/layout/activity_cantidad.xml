@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.i044114_i012114.proyectofinalandroid.Views.CantidadActivity">
+
+    <include  layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/id_tv_name_cantidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="nombre"
+                        android:textAlignment="center"
+                        android:textColor="#ff0000"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        />
+                    <LinearLayout
+                        android:id="@+id/ln_1"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/border"
+                        android:orientation="vertical"
+                        android:textAlignment="center"
+                        android:padding="10dp"
+                        android:layout_below="@id/id_tv_name_cantidad"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/id_img_imagen_cantidad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/id_tv_description_cantidad"
+                        android:text="descripcion"
+                        android:textAlignment="gravity"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/ln_1"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#29B6F6"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/id_ln_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/id_tv_description_cantidad">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditTextWhite">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/id_cant_pedido"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Cantidad"
+                                android:inputType="text"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditTextWhite">
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/id_direc_pedido"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Direccion"
+                                android:inputType="text"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/id_btn_hacer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Agregar a pedidos"
+                        android:theme="@style/RaisedButtonDark"
+                        android:onClick="hacerPedido"
+                        android:layout_below="@id/id_ln_1"
+                        android:layout_margin="10dp"/>
+                    <Button
+                        android:id="@+id/id_btn_listar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/id_btn_hacer"
+                        android:onClick="listarLosPedidos"
+                        android:theme="@style/RaisedButtonDark"
+                        android:layout_margin="10dp"
+                        android:text="Listar pedidos"
+                        android:layout_marginBottom="60dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

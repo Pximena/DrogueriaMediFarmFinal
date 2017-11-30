@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DrogueriaMediFarm-master.iml" filepath="$PROJECT_DIR$/DrogueriaMediFarm-master.iml" />
+      <module fileurl="file://D:\DrogueriaMediFarm-master\DrogueriaMediFarmBlue-master.iml" filepath="D:\DrogueriaMediFarm-master\DrogueriaMediFarmBlue-master.iml" />
+      <module fileurl="file://D:\favorite-master\ProyectoFinalAndroid.iml" filepath="D:\favorite-master\ProyectoFinalAndroid.iml" />
+      <module fileurl="file://D:\favorite-master\ProyectoFinalAndroid-master.iml" filepath="D:\favorite-master\ProyectoFinalAndroid-master.iml" />
+      <module fileurl="file://D:\favorite-master\ProyectoFinalAndroid-master-master.iml" filepath="D:\favorite-master\ProyectoFinalAndroid-master-master.iml" />
+      <module fileurl="file://D:\DrogueriaMediFarm-master\ProyectoFinalFavoritos-master.iml" filepath="D:\DrogueriaMediFarm-master\ProyectoFinalFavoritos-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\ProyectoFinalFavoritos-master\favorite-master.iml" filepath="D:\ProyectoFinalFavoritos-master\favorite-master.iml" />
+    </modules>
+  </component>
+</project>
